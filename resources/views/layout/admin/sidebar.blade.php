@@ -11,65 +11,65 @@
             </div>
             <div class="pull-left info">
                 <p>{{ '张三' }}</p>
-                <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
+                <a href="#"><i class="fa fa-circle text-success"></i> 在线</a>
             </div>
         </div>
 
         <ul class="sidebar-menu">
-            <li class="header">HOME</li>
-            <li><a href="{{ route('admin.index') }}"> <i class="fa fa-home"></i> Home</a></li>
+            <li class="header">主页</li>
+            <li><a href="{{ route('admin.index') }}"> <i class="fa fa-home"></i> 主页</a></li>
 
-            <li class="header">SELL</li>
+            <li class="header">销售</li>
 
             <li class="treeview @if(request()->segment(2) == 'plateforms') active @endif">
                 <a href="#">
-                    <i class="fa fa-gift"></i> <span>Plateforms</span>
+                    <i class="fa fa-gift"></i> <span>平台</span>
                     <span class="pull-right-container">
                             <i class="fa fa-angle-left pull-right"></i>
                     </span>
                 </a>
                 <ul class="treeview-menu">
-                    <li><a href="{{ route('plateforms.index') }}"><i class="fa fa-circle-o"></i> List plateforms</a></li>
-                    <li><a href="{{ route('plateforms.create') }}"><i class="fa fa-plus"></i> Create plateform</a></li>                 
+                    <li><a href="{{ route('plateforms.index') }}"><i class="fa fa-circle-o"></i> 平台列表</a></li>
+                    <li><a href="{{ route('plateforms.create') }}"><i class="fa fa-plus"></i> 新增平台</a></li>                 
                 </ul>
             </li>
 
             <li class="treeview @if(request()->segment(2) == 'exchanges') active @endif">
                 <a href="#">
-                    <i class="fa fa-gift"></i> <span>Exchanges</span>
+                    <i class="fa fa-gift"></i> <span>外汇</span>
                     <span class="pull-right-container">
                             <i class="fa fa-angle-left pull-right"></i>
                     </span>
                 </a>
                 <ul class="treeview-menu">
-                    <li><a href="{{ route('exchanges.index') }}"><i class="fa fa-circle-o"></i> List exchanges</a></li>
-                    <li><a href="{{ route('exchanges.create') }}"><i class="fa fa-plus"></i> Create exchange</a></li>                  
+                    <li><a href="{{ route('exchanges.index') }}"><i class="fa fa-circle-o"></i> 外汇列表</a></li>
+                    <li><a href="{{ route('exchanges.create') }}"><i class="fa fa-plus"></i> 新增外汇</a></li>                  
                 </ul>
             </li>
 
             <li class="treeview @if(request()->segment(2) == 'games') active @endif">
                 <a href="#">
-                    <i class="fa fa-gift"></i> <span>Games</span>
+                    <i class="fa fa-gift"></i> <span>游戏</span>
                     <span class="pull-right-container">
                             <i class="fa fa-angle-left pull-right"></i>
                     </span>
                 </a>
                 <ul class="treeview-menu">
-                    <li><a href="{{ route('games.index') }}"><i class="fa fa-circle-o"></i> List games</a></li>
-                    <li><a href="{{ route('games.create') }}"><i class="fa fa-plus"></i> Create game</a></li>                    
+                    <li><a href="{{ route('games.index') }}"><i class="fa fa-circle-o"></i> 游戏列表</a></li>
+                    <li><a href="{{ route('games.create') }}"><i class="fa fa-plus"></i> 新增游戏</a></li>                    
                 </ul>
             </li>
 
             <li class="treeview @if(request()->segment(2) == 'inventories') active @endif">
                 <a href="#">
-                    <i class="fa fa-gift"></i> <span>Inventories</span>
+                    <i class="fa fa-gift"></i> <span>库存</span>
                     <span class="pull-right-container">
                             <i class="fa fa-angle-left pull-right"></i>
                     </span>
                 </a>
                 <ul class="treeview-menu">
-                    <li><a href="{{ route('inventories.index') }}"><i class="fa fa-circle-o"></i> List Inventories</a></li>
-                    <li><a href="{{ route('inventories.create') }}"><i class="fa fa-plus"></i> Create Inventories</a></li>                    
+                    <li><a href="{{ route('inventories.index') }}"><i class="fa fa-circle-o"></i> 当前库存</a></li>
+                    <li><a href="{{ route('inventories.create') }}"><i class="fa fa-plus"></i> 新增库存</a></li>                    
                 </ul>
             </li>
             

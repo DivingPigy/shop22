@@ -36,9 +36,9 @@
 </noscript>
 <!-- Site wrapper -->
 <div class="wrapper">
-    @include('layouts.admin.header', ['user' => '张三'])
+    @include('layouts.admin.header', ['user' => 'St&Games'])
 
-    @include('layouts.admin.sidebar', ['user' => '张三'])
+    @include('layouts.admin.sidebar', ['user' => 'St&Games'])
 
     <!-- Content Wrapper. Contains page content -->
     <div class="content-wrapper">
