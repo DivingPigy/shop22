@@ -24,7 +24,7 @@
                                         <a href="{{ route('games.show', $game->id) }}">{{ $game -> name }}</a>
                                     </td>
                                     <td>
-                                        <a href="{{ route('games.show', $game->id) }}">{{ $game -> plateformName }}</a>
+                                        <a href="{{ route('plateforms.show', $game -> plateform ->id) }}">{{ $game -> plateformName }}</a>
                                     </td>
                                     <td>
                                         <form action="{{ route('games.destroy', $game->id) }}" method="post" class="form-horizontal">
